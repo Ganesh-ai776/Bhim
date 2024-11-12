@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commarse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              sm1: "100px",
+              sm2: "400px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center">
+      <nav
+        class="flex flex-wrap gap-2 justify-between items-center px-10 sticky top-0 bg-white"
+      >
+        <div class="h-[75px] w-[80px] rounded-full">
+          <img
+            class="h-[100%] w-[100%] rounded-full place-items-center"
+            src="https://simicart.com/wp-content/uploads/eCommerce-logo.jpg"
+            alt=""
+          />
+        </div>
+        <div class="h-[50px] w-[170px] flex justify-between px-3 items-center">
+          <a href="" class="flex flex-col items-center justify-center"
+            ><i class="bx bx-bell text-[25px]" style="color: #5959f3"> </i>
+            <span>notification</span></a
+          >
+          <a href="" class="flex flex-col items-center justify-center"
+            ><i class="bx bx-cart-alt text-[25px]" style="color: #5959f3"></i>
+            <span>Cart</span></a
+          >
+          <!-- <a href=""></i></a> -->
+          <!-- <a href="">Link</a> -->
+        </div>
+        <div class="h-[50px] w-[300px] rounded-lg">
+          <form class="h-[100%] w-[100%] rounded-lg" action="" method="post">
+            <input
+              class="bg-gray-800 h-[100%] w-[100%] rounded-lg p-2 text-white border-none"
+              type="search"
+              placeholder="search..."
+            />
+          </form>
+        </div>
+        <a href="" class="flex flex-col items-center justify-center">
+          <i class="bx bxs-user-account text-[25px]" style="color: #5959f3"></i>
+          <span>account</span></a
+        >
+        <div class="h-[50px] w-[200px] flex gap-3">
+          <button
+            class="w-[45%] h-[100%] duration-300 text-[18px] font-[600] hover:bg-blue-500 hover:text-white hover:scale-[1.1] rounded-lg"
+          >
+            Log in
+          </button>
+          <button
+            class="w-[45%] h-[100%] duration-300 text-[18px] font-[600] hover:bg-red-500 hover:text-white hover:scale-[1.1] rounded-lg"
+          >
+            Sign up
+          </button>
+        </div>
+      </nav>
+
+      <!-- contant -->
+      <div
+        class="p-3 gap-2 flex flex-wrap justify-evenly items-center mt-2 bg-gray-200"
+      >
+        <a
+          href=""
+          class="w-[110px] h-[100%] font-bold flex flex-col justify-center items-center overscroll-x-auto"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Grocery"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100"
+          />
+          <span>Grocery</span>
+        </a>
+        <a
+          href=""
+          class="w-[80px] h-[100%] font-bold flex flex-col justify-center items-center overscroll-x-auto"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Beauty, Toys &amp; More"
+            src="https://rukminim2.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+          />
+          <span>Toys</span>
+        </a>
+        <a
+          href=""
+          class="w-[110px] h-[100%] font-bold flex flex-col justify-center items-center"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Mobiles"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100"
+          />
+          <span>Mobile</span>
+        </a>
+        <a
+          href=""
+          class="w-[110px] h-[100%] font-bold flex flex-col justify-center items-center"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Fashion"
+            src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100"
+          />
+          <span>Fashion</span>
+        </a>
+        <a
+          href=""
+          class="w-[110px] h-[100%] font-bold flex flex-col justify-center items-center"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Electronics"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100"
+          />
+          <span>Electronics</span>
+        </a>
+        <a
+          href=""
+          class="w-[110px] h-[100%] font-bold flex flex-col justify-center items-center"
+        >
+          <img
+            class="_2puWtW _3a3qyb"
+            alt="Home &amp; Furniture"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+          />
+          <span class="text-center">Home & Furniture</span>
+        </a>
+      </div>
+      <!-- banner -->
+      <div class="mt-4">
+        <img
+          src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/1957c92d54dccbb8.jpg?q=20"
+          loading="eager"
+          alt="Image"
+          class="h-[100%] w-[100%] object-fit"
+        />
+        <!-- <img
+        src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/412dd36cba1ca722.jpg?q=20"
+        loading="eager"
+        alt="Image"
+        
+      /> -->
+        <!-- <img src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/1957c92d54dccbb8.jpg?q=20" loading="eager" alt="Image" style="width: 100%; margin: auto; display: block; position: absolute; inset: 0px; padding: inherit; object-fit: cover; opacity: 0; aspect-ratio: 211 / 35;"> -->
+      </div>
+
+      <!-- products -->
+      <div
+        class="border-solid border-[2px] border-green-500 gap-2 grid grid-cols-6 mt-3 place-items-center p-3 sm:grid-cols-3 xl:grid-cols-6 sm1:grid-cols-1 sm2:grid-cols-2"
+      >
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+        <div
+          class="h-[200px] w-[170px] border-solid border-[2px] border-red-500"
+        ></div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-gray-600 h-[300px] mt-5">
+        <div class="h-[100%] flex justify-center items-center mt-4 gap-[17px]">
+          <a
+            href=""
+            class="focus:ring focus:ring-offset-1 focus:ring-[#4267b2] bg-[#4267b2] h-[40px] w-[40px] flex justify-center items-center text-[18px] text-[#fff] rounded-[50%]"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href=""
+            class="focus:ring focus:ring-offset-1 focus:ring-[#1da1f2] bg-[#1da1f2] h-[40px] w-[40px] flex justify-center items-center text-[18px] text-[#fff] rounded-[50%]"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href=""
+            class="focus:ring focus:ring-offset-1 focus:ring-[#e1306c] bg-[#e1306c] h-[40px] w-[40px] flex justify-center items-center text-[18px] text-[#fff] rounded-[50%]"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href=""
+            class="focus:ring focus:ring-offset-1 focus:ring-[#ff0000] bg-[#ff0000] h-[40px] w-[40px] flex justify-center items-center text-[18px] text-[#fff] rounded-[50%]"
+          >
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
